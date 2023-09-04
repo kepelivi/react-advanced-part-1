@@ -1,0 +1,39 @@
+GET http://localhost:4000/api/v2/languages
+
+###
+
+GET http://localhost:4000/api/v2/languages/3
+
+###
+
+GET http://localhost:4000/api/v2/languages/123
+
+###
+
+POST http://localhost:4000/api/v2/languages/
+Content-Type: application/json
+
+{
+  "langid": 11,
+  "name": "BASIC",
+  "dob": 1964,
+  "github23_pr": 1.0,
+  "github23_stars": 1.0,
+  "designer": "John F. Kemeny, Thomas E. Kurtz",
+  "maintainer": "",
+  "logo": ""
+}
+
+###
+GET http://localhost:4000/api/v2/feedbacks
+
+###
+POST http://localhost:4000/api/v2/feedbacks/vote/11
+Content-Type: application/json
+
+{
+  "vote": 1
+}
+
+###
+GET http://localhost:4000/api/v2/feedbacks/summary/11
